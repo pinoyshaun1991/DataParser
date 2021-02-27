@@ -1,12 +1,13 @@
 <?php
 
-namespace iTech\Common\Service;
+namespace future\Common\Service;
+use future\Controller\ParseController;
 
 /**
- * A generic class to handle all API requests
+ * A generic class to handle all CSV read requests
  *
  * Class APIService
- * @package iTech\Common\Service
+ * @package future\Common\Service
  */
 abstract class APIService
 {
@@ -16,33 +17,37 @@ abstract class APIService
     public function __construct(){}
 
     /**
-     * Requests contents from the API request then returns raw data
+     * Reads contents from the CSV file then return into array
      *
-     * @param $url
-     * @param array $params
-     * @param string $method
-     * @param string $contentType
-     * @return bool|string
+     * @param $dir
+     * @return array
      */
-    public function getContents($url, $params = array(), $method = '', $contentType = 'application/json')
+    public function getContents($dir) : array
     {
-        $ch = curl_init($url);
-        curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "POST");
+        $dirArray  = scandir($dir);
+        $dataArray = array();
 
-        if ($method === 'post') {
-            curl_setopt($ch, CURLOPT_POSTFIELDS, $contentType === 'text/plain' ? $params :
-                ($contentType === 'application/x-www-form-urlencoded' ? http_build_query($params) : json_encode($params))
-            );
+        foreach ($dirArray as $directory) {
+            /** If filename is integer process files **/
+            if (is_numeric($directory)) {
+
+                if ($handleDir = opendir($dir.'/'.$directory)) {
+                    /** loop over the directory **/
+                    while (false !== ($entry = readdir($handleDir))) {
+                        /** Read CSV **/
+                        $rows         = array_map('str_getcsv', file($dir.'/'.$directory.'/'.$entry));
+                        $header       = array_shift($rows);
+
+                        foreach($rows as $row) {
+                            $dataArray[str_replace('log', 'csv', $entry)][] = array_combine($header, $row);
+                        }
+                    }
+
+                    closedir($handleDir);
+                }
+            }
         }
 
-        curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-        curl_setopt($ch, CURLOPT_HTTPHEADER, array(
-                'Content-Type: '.$contentType,
-                'Content-Length: '.$method === 'post' ? strlen(json_encode($params)) : 0,
-                'Authorization: '.md5($url)
-            )
-        );
-
-        return curl_exec($ch);
+        return $dataArray;
     }
 }

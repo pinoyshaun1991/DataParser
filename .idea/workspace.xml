@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="e89e53a9-560d-4933-b96a-4dfe1ff10d29" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/tests/Controller/ParseControllerTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/score.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Common/Controller/RecipeInterface.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Common/Controller/ParseInterface.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Common/Model/RawModelInterface.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Common/Model/CSVModelInterface.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Common/Service/APIService.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Common/Service/APIService.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/RecipeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/ParseController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/RawIngredientModel.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/RawInstructionModel.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/RawRecipeModel.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/RecipeModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/CSVModel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Script/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Script/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Service/ContentRecipeService.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Service/CSVService.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Controller/RecipeControllerTest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Model/RawIngredientModelTest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Model/RawInstructionModelTest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Model/RawRecipeModelTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Model/CSVModelTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Model/RecipeModelTest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Service/ContentRecipeServiceTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Service/CSVServiceTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_psr4.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_psr4.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_static.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_static.php" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
+    <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
+    <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration">
+    <include_path>
+      <path value="$PROJECT_DIR$/vendor/phar-io/manifest" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/resource-operations" />
+      <path value="$PROJECT_DIR$/vendor/symfony/debug" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-ctype" />
+      <path value="$PROJECT_DIR$/vendor/phar-io/version" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php73" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php72" />
+      <path value="$PROJECT_DIR$/vendor/symfony/browser-kit" />
+      <path value="$PROJECT_DIR$/vendor/symfony/finder" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-intl-idn" />
+      <path value="$PROJECT_DIR$/vendor/symfony/process" />
+      <path value="$PROJECT_DIR$/vendor/theseer/tokenizer" />
+      <path value="$PROJECT_DIR$/vendor/symfony/event-dispatcher" />
+      <path value="$PROJECT_DIR$/vendor/symfony/css-selector" />
+      <path value="$PROJECT_DIR$/vendor/symfony/dom-crawler" />
+      <path value="$PROJECT_DIR$/vendor/symfony/service-contracts" />
+      <path value="$PROJECT_DIR$/vendor/symfony/http-client-contracts" />
+      <path value="$PROJECT_DIR$/vendor/symfony/console" />
+      <path value="$PROJECT_DIR$/vendor/symfony/mime" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/php-token-stream" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-mbstring" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/php-timer" />
+      <path value="$PROJECT_DIR$/vendor/symfony/yaml" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/php-file-iterator" />
+      <path value="$PROJECT_DIR$/vendor/symfony/http-client" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/php-text-template" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/php-code-coverage" />
+      <path value="$PROJECT_DIR$/vendor/composer" />
+      <path value="$PROJECT_DIR$/vendor/phpspec/prophecy" />
+      <path value="$PROJECT_DIR$/vendor/phpspec/php-diff" />
+      <path value="$PROJECT_DIR$/vendor/phpspec/phpspec" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/phpunit" />
+      <path value="$PROJECT_DIR$/vendor/psr/container" />
+      <path value="$PROJECT_DIR$/vendor/psr/log" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/instantiator" />
+      <path value="$PROJECT_DIR$/vendor/fabpot/goutte" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/version" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/recursion-context" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/object-enumerator" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/global-state" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/object-reflector" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/diff" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/comparator" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/environment" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/code-unit-reverse-lookup" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/exporter" />
+      <path value="$PROJECT_DIR$/vendor/myclabs/deep-copy" />
+      <path value="$PROJECT_DIR$/vendor/phplucidframe/console-table" />
+      <path value="$PROJECT_DIR$/vendor/webmozart/assert" />
+      <path value="$PROJECT_DIR$/vendor/phpdocumentor/type-resolver" />
+      <path value="$PROJECT_DIR$/vendor/phpdocumentor/reflection-docblock" />
+      <path value="$PROJECT_DIR$/vendor/phpdocumentor/reflection-common" />
+    </include_path>
+  </component>
+  <component name="ProjectId" id="1hEp9XgiibrYAYgOueeex1Lkuri" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php.debug" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/Model" />
+      <recent name="$PROJECT_DIR$/src" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e89e53a9-560d-4933-b96a-4dfe1ff10d29" name="Default Changelist" comment="" />
+      <created>1599585955873</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1599585955873</updated>
+      <workItem from="1599585957309" duration="116000" />
+      <workItem from="1599587162414" duration="1310000" />
+      <workItem from="1599834202614" duration="599000" />
+      <workItem from="1600164810820" duration="421000" />
+      <workItem from="1600184300457" duration="1283000" />
+      <workItem from="1600424150230" duration="585000" />
+      <workItem from="1600453854473" duration="565000" />
+      <workItem from="1600505851733" duration="598000" />
+      <workItem from="1600613528900" duration="1784000" />
+      <workItem from="1600699745299" duration="199000" />
+      <workItem from="1600906363076" duration="603000" />
+      <workItem from="1600954666079" duration="598000" />
+      <workItem from="1600972571242" duration="597000" />
+      <workItem from="1600980080593" duration="1187000" />
+      <workItem from="1601130487841" duration="78000" />
+      <workItem from="1601557100940" duration="251000" />
+      <workItem from="1601557411837" duration="202000" />
+      <workItem from="1601646092481" duration="2695000" />
+      <workItem from="1601678966111" duration="304000" />
+      <workItem from="1601926265228" duration="414000" />
+      <workItem from="1614364392835" duration="3150000" />
+      <workItem from="1614367657800" duration="27011000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

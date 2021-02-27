@@ -1,16 +1,15 @@
 {
-    "name": "iTechMediaTest",
-    "description": "Consuming Recipe API",
+    "name": "futureTest",
+    "description": "Data Parser",
     "type": "PHP",
     "require": {
         "php": "7.3.*",
         "phpspec/phpspec": "~3.0",
-        "phplucidframe/console-table": "^1.2",
-        "ext-curl": "*"
+        "phplucidframe/console-table": "^1.2"
     },
     "autoload": {
         "psr-4": {
-            "iTech\\": "src/"
+            "future\\": "src/"
         }
     },
     "require-dev": {

@@ -20,9 +20,9 @@ class ComposerStaticInitf9fc7e38b93793b71904acd46b0c8b9a
         array (
             'phpDocumentor\\Reflection\\' => 25,
         ),
-        'i' => 
+        'f' => 
         array (
-            'iTech\\' => 6,
+            'future\\' => 7,
         ),
         'W' => 
         array (
@@ -73,7 +73,7 @@ class ComposerStaticInitf9fc7e38b93793b71904acd46b0c8b9a
             1 => __DIR__ . '/..' . '/phpdocumentor/reflection-docblock/src',
             2 => __DIR__ . '/..' . '/phpdocumentor/type-resolver/src',
         ),
-        'iTech\\' => 
+        'future\\' => 
         array (
             0 => __DIR__ . '/../..' . '/src',
         ),
